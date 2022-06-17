@@ -1,0 +1,30 @@
+<!-- Javascript Function named is_integer which checks if the passed argument is an integer -->
+<html>
+  <head>
+    <script> 
+      function is_integer(x) {
+        var linebreak="<br/>";
+        if(typeof x=='number' && !isNaN(x)) {
+          if(Number.isInteger(x)) {
+            document.write(" x is an Integer ");
+            document.write(linebreak);
+          }
+          else {
+            document.write(" x is a float value ");
+            document.write(linebreak);
+          }
+        }
+        else {
+          document.write(" x is not a number ");
+          document.write(linebreak);
+        }
+      }
+      is_integer("welcome");
+      is_integer(30);
+      is_integer(1.5);
+      is_integer(-1.5);
+      is_integer(-30);
+      is_integer(NaN);
+    </script>
+  </head>
+</html>
