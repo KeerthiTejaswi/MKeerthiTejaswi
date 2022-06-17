@@ -1,0 +1,24 @@
+<!-- Javascript program to convert temperatures to and from celsius,fahrenheit -->
+<html>
+  <head>
+    <script>
+      function CtoF(celsius) {
+        var linebreak="<br/>";
+        var Ctemp=celsius;
+        var CtoFahren=Ctemp*9/5+32;
+        document.write(CtoFahren);
+        document.write(linebreak);
+      }
+      function FtoC(fahrenheit) {
+        var linebreak="<br/>";
+        var Ftemp=fahrenheit;
+        var FtoCel=(Ftemp-32)*5/9;
+        document.write(FtoCel);
+        document.write(linebreak);
+      }
+      CtoF(40);
+      FtoC(60);
+    </script>
+  </head>
+</html>
+        
