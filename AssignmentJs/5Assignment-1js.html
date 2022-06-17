@@ -1,0 +1,24 @@
+<!-- Javascript function that converts a given amount of money into coins of denominations (1,2,5,10,and 25) -->
+<html>
+  <head>
+    <script>
+      function convert_to_coins(amount,coins) {
+        if(amount===0) {
+          return [];
+        }
+        else {
+          if(amount>=coins[0]) {
+            left=amount-coins[0];
+            return [coins[0]].concat(convert_to_coins(left,coins));
+          }
+          else {
+            coins.shift();
+            return convert_to_coins(amount,coins);
+          }
+        }
+      }
+      convert_to_coins(87,[25,10,5,2,1]);
+      document.write(convert_to_coins(87,[25,10,5,2,1]));
+    </script>
+  </head>
+</html>
