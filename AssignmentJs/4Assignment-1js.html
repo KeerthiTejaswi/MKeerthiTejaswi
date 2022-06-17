@@ -1,0 +1,18 @@
+<!-- Factorial function that returns the factorial of a given number,n -->
+<html>
+  <head>
+    <script>
+      function Factorial(n) {
+        if(n==0||n==1) {
+          return 1;
+        }
+        else {
+          return n*Factorial(n-1);
+        }
+      }
+      var n=5;
+      answer=Factorial(n);
+      document.write("Factorial of" +n+ "is" + answer);
+    </script>
+  </head>
+</html>
