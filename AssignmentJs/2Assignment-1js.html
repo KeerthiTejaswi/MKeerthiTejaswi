@@ -1,0 +1,15 @@
+<!--  using the forEach function defined for an array ,find the sum of the array of numbers -->
+<html>
+  <head>
+    <script>
+      function add_all(arr) {
+        var sum=0;
+        arr.forEach(item=> {
+          sum+=item; });
+      document.write("sum is "+(sum));
+        return sum;
+      }
+      add_all([3,5,7,2,-5]);
+    </script>
+  </head>
+</html>
