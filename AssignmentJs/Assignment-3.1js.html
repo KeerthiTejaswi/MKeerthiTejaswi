@@ -1,0 +1,13 @@
+<!-- Function to find the largest string in an array of strings making use of reduce function -->
+<html>
+    <head>
+        <script>
+            var arr=new Array();
+            arr=["Hello","Nice","Welcome","Enthusiastic","Beautiful"];
+            var largestString=arr.reduce(function(a,b){
+                return a.length>b.length?a:b; 
+            });
+            document.write(largestString);
+        </script>
+    </head>
+</html>
