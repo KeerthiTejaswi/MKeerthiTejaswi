@@ -1,0 +1,17 @@
+<!-- Function that takes an array of numbers and returns the sum of squares of those numbers -->
+<html>
+    <head>
+        <script>
+            function sum_of_squares(elements) {
+            var linebreak="<br/>"; 
+                var sum=0;
+                var i=elements.length;
+                while(i--) 
+                sum+=Math.pow(elements[i],2);
+                result=sum;
+                }
+                sum_of_squares([1,2,3,4,5]);
+                document.write(result);
+        </script>
+    </head>
+</html>
