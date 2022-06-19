@@ -1,0 +1,21 @@
+<!-- constructor function to represent a Rectangle ,which calculates area and perimeter -->
+<html>
+    <head>
+        <script>
+            function Rectangle(height,width) {
+                this.height=height;
+                this.width=width;
+                this.calArea=function() {
+                    return this.height*this.width; };
+                this.calPerimeter=function() {
+                    return (this.height+this.width)*2;
+                };
+                };
+                var rect=new Rectangle(3,4);
+                var area=rect.calArea();
+                document.write(area);
+                var perimeter=rect.calPerimeter();
+                document.write(perimeter);            
+        </script>
+    </head>
+</html>
