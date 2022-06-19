@@ -1,0 +1,22 @@
+<!-- To check if a string is palindrome-->
+<html>
+    <head>
+        <script>
+            function is_palindrome(str) {
+                var arrayValues=str.split('');
+                var reverseArrayValues=arrayValues.reverse();
+                var reverseString=reverseArrayValues.join('');
+                if(str==reverseString) {
+                    document.write("It is a palindrome");
+                    return true;
+                }
+                else {
+                    document.write("It is not a palindrome");
+                    return false;
+                }
+            }
+            is_palindrome("hellolleh");
+
+        </script>
+    </head>
+</html>
