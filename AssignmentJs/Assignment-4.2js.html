@@ -1,0 +1,18 @@
+<!-- Point function which takes x and y coordinates as arguments to define it and to evaluate distance from another point -->
+<html>
+    <head>
+        <script>
+            function Point(x,y) {
+                this.x=x;
+                this.y=y;
+                this.distanceTo = function(Point) {
+                    var distance=Math.sqrt((Math.pow(Point.x-this.x,2))+(Math.pow(Point.y-this.y,2)));
+                    return distance;
+                };
+            }
+            var newPoint=new Point(10,20);
+            var nextPoint=new Point(20,30);
+            document.write(newPoint.distanceTo(nextPoint));
+        </script>
+    </head>
+</html>
