@@ -1,0 +1,20 @@
+<!-- Canvas -->
+<html>
+    <head>
+    <title> canvas </title>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="200" height="150" style ="border: 1px solid grey;">
+        Hello
+        </canvas>
+        <script>
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.beginPath();
+            ctx.rect(10,10,100,50);
+            ctx.strokeStyle="red";
+            ctx.stroke();
+
+        </script> 
+    </body>
+</html>
