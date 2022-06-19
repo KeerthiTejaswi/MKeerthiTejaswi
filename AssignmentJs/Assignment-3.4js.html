@@ -1,0 +1,19 @@
+<!-- Function that takes an array and returns the array of those elements that do not fulfill the criteria-->
+<html>
+    <head>
+        <script>
+            var linebreak="<br/>";
+            var Array=[2,3,4,5,6];
+            document.write(Array.filter(function (ele) {
+                return !(ele%2==0);
+            }));
+            document.write(linebreak);
+
+            var StringArray=["hello","hi","welcome","on"];
+            document.write(StringArray.filter(function(str){
+                return str.length<3;
+            }));
+
+        </script>
+    </head>
+</html>
