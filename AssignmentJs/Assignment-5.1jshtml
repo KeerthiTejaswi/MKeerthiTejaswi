@@ -1,0 +1,17 @@
+<!-- Use of Set Interval Function -->
+<html>
+    <head>
+        <title>
+            Set Interval
+        </title>
+    </head>
+    <body>
+        <p id="name"> Hello </p>
+        <script>
+            var result=setInterval(timer,3000);
+            function timer() {
+                document.getElementById("name").innerHTML+="<p> Hi </p>";
+            }
+        </script>
+    </body>
+</html>
