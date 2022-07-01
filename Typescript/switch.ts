@@ -1,5 +1,7 @@
+var month=2,
+    year=2022;
 var day=0;
-switch(2) {
+switch(month) {
   case 1:
   case 3:
   case 5:
@@ -19,12 +21,13 @@ switch(2) {
    
   case 2:
     // To check if it is leap year or not
-   if(((2022 % 4 == 0) && !(2022 % 100 == 0))||(2022 % 400 == 0)) 
-  console.log("No Of Days are 29"); 
+   if(((year % 4 == 0) && !(year % 100 == 0))||(year % 400 == 0)) 
+  day=29;
   else 
-  console.log("No Of Days are 28");
+  day=28;
   break;
   
   default:
    console.log("invalid month");
 }
+console.log(` The month ${month} in ${year} has ${day} days`);
