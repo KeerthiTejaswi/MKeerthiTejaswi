@@ -14,30 +14,23 @@ const MyRectangle:myRectangle={
 };
 console.log(MyRectangle);
 
-// Using Interface for Square
-interface Square {
-    side:number
-}
-interface mySquare extends Square {
-    color:string
-}
-const MySquare:mySquare={
-    side:20,
-    color:"green"
-};
-console.log(MySquare);
 
-// Using Interface for Triangle
-interface Triangle {
-    base:number,
-    height:number
+// Using Type Aliases
+type TodaysDate=number
+type TodaysDay=string
+type Todaysyear=number
+type Today={
+    date=TodaysDate,
+    day=TodaysDay,
+    year=TodaysYear
 }
-interface myTriangle extends Triangle {
-    color:string
-}
-const MyTriangle:myTriangle={
-    base:10,
-    height:20,
-    color:"red"
+
+const todaysdate:TodaysDate=30
+const todaysday:TodaysDay="thursday"
+const todaysyear:TodaysYear=2022
+const today:Today={
+    date:todaysDate,
+    day:todaysDay,
+    year:todaysYear
 };
-console.log(MyTriangle);
+console.log(today);
