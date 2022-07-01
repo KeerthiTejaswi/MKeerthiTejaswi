@@ -1,3 +1,4 @@
+// Using Switch Condition 
 var month=2,
     year=2022;
 var day=0;
