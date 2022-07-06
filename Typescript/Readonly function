@@ -1,4 +1,4 @@
-// Arrray
+// Array
 var array:number[]=[];
 array.push(5);
 array.push(3);
@@ -17,7 +17,7 @@ class Student {
 }
 }
 let stu=new Student(1,"rani");
-stu.stuId=2; // It shows a compiler error because readonly is used for stuid.so value cannot be changed.
+stu.stuId=2;   // It shows a compiler error because readonly is used for stuid.so value cannot be changed.
 stu.stuName="raju";
 console.log(stu);
 
