@@ -6,12 +6,12 @@ console.log("length:"+len);
 
 buff = new Buffer(26);
 for (var i=0;i<26;i++) {
-  buff[i]=i+90;
+  buff[i]=i+96;
 }
- console.log(buff.toString('ascii')); // we will be getting output as abcdefghijklmnopqrstuvwxyz
- console.log(buff.toString('ascii',0,5)); // we will be getting output as abcde
- console.log(buff.toString('utf8',0,5)); // we will be getting output as abcde
- console.log(buff.toString(undefined,0,5)); // we will be getting output as abcde
+ console.log(buff.toString('ascii')); // we will be getting output as abcdefghijklmnopqrstuvwxy
+ console.log(buff.toString('ascii',0,5)); // we will be getting output as abcd
+ console.log(buff.toString('utf8',0,5)); // we will be getting output as abcd
+ console.log(buff.toString(undefined,0,5)); // we will be getting output as abcd
  
  // concatenate Buffers
  var buffer1 = new Buffer('hii');
